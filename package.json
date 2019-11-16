@@ -5,8 +5,8 @@
     "lerna": "^3.18.4"
   },
   "scripts": {
-    "version": "lerna version --git-tag-version=false  --force-publish",
-    "publish": "lerna publish"
+    "version": "lerna changed && lerna version",
+    "publish": "lerna changed && lerna publish from-package"
   },
   "dependencies": {
     "eslint": "^6.6.0"
