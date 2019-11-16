@@ -25,7 +25,7 @@ jobs:
           npm ci
 
       - name: Bump version ${{ steps.get_version.outputs.VERSION }}
-        run: npm run version ${{ steps.get_version.outputs.VERSION }} --git-tag-version=false  --force-publish
+        run: npm run version ${{ steps.get_version.outputs.VERSION }}
 
       - name: Publish package
         run: npm run publish
