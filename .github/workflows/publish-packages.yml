@@ -28,7 +28,7 @@ jobs:
         run: npm run version ${{ steps.get_version.outputs.VERSION }} -- --git-tag-version=false  --force-publish --yes
 
       - name: Publish package
-        run: npm run publish -- --yes
+        run: npm run publish -- --no-git-reset --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
