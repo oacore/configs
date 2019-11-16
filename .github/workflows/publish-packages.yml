@@ -27,11 +27,6 @@ jobs:
       - name: Bump version ${{ steps.get_version.outputs.VERSION }}
         run: npm run version ${{ steps.get_version.outputs.VERSION }} -- --git-tag-version=false  --force-publish --yes
 
-      - name: Publish package
-        run: npm run publish -- --no-git-reset --yes
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1.7.3
         with:
@@ -41,3 +36,9 @@ jobs:
           body: Bump package.json version
           branch: bump-version-${{ steps.get_version.outputs.VERSION }}
           base: master
+
+      - name: Publish package
+        run: npm run publish -- --yes
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
