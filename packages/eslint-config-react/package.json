@@ -9,5 +9,10 @@
     "@oacore/eslint-config-base": "^0.0.6",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.5.0"
+  },
+  "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com/oacore/configs.git",
+    "directory": "@oacore/configs"
   }
 }
