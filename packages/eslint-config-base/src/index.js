@@ -3,6 +3,9 @@ module.exports = {
         'eslint-config-airbnb-base',
         'eslint-config-prettier',
     ],
+    "plugins": [
+        'prettier'
+    ],
     "rules": {
         "curly": [
             "error",
