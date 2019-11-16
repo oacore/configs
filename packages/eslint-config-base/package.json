@@ -1,6 +1,6 @@
 {
   "name": "@oacore/eslint-config-base",
-  "version": "0.0.6",
+  "version": "0.4.4",
   "description": "ESLint plugin for non React projects",
   "author": "CORE Team <dev@core.ac.uk>",
   "license": "MIT",
@@ -9,8 +9,8 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.5.0"
   },
-  "repository" : {
-    "type" : "git",
+  "repository": {
+    "type": "git",
     "url": "ssh://git@github.com/oacore/configs.git",
     "directory": "@oacore/configs"
   }
