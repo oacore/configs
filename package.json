@@ -4,6 +4,10 @@
   "devDependencies": {
     "lerna": "^3.18.4"
   },
+  "scripts": {
+    "version": "lerna version",
+    "publish": "lerna publish"
+  },
   "dependencies": {
     "eslint": "^6.6.0"
   }

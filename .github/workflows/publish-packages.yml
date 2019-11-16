@@ -25,10 +25,10 @@ jobs:
           npm ci
 
       - name: Bump version ${{ steps.get_version.outputs.VERSION }}
-        run: lerna version ${{ steps.get_version.outputs.VERSION }} --git-tag-version=false
+        run: npm run version ${{ steps.get_version.outputs.VERSION }} --git-tag-version=false
 
       - name: Publish package
-        run: lerna publish
+        run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
