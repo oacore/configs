@@ -23,6 +23,8 @@ jobs:
           scope: '@oacore/configs'
       - run: |
           npm ci
+        env:
+          NPM_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Bump version ${{ steps.get_version.outputs.VERSION }}
         run: npm run version ${{ steps.get_version.outputs.VERSION }} -- --git-tag-version=false  --force-publish --yes
