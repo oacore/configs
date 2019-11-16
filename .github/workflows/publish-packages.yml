@@ -20,11 +20,9 @@ jobs:
         with:
           node-version: '12.x'
           registry-url: https://npm.pkg.github.com/
-          scope: '@oacore/api-client'
+          scope: '@oacore/configs'
       - run: |
           npm ci
-          npm run lint
-          npm run build
 
       - name: Bump version ${{ steps.get_version.outputs.VERSION }}
         run: lerna version ${{ steps.get_version.outputs.VERSION }} --git-tag-version=false
