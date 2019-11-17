@@ -1,3 +1,3 @@
-# OACORE JS linter configs
+# JS linter configs
 Shareable configs across our JS projects
 
