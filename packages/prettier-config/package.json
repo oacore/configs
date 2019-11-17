@@ -1,0 +1,14 @@
+{
+  "name": "@oacore/prettier-config",
+  "version": "0.4.7",
+  "description": "Global prettier configuration across our projects",
+  "author": "CORE Team <dev@core.ac.uk>",
+  "homepage": "https://github.com/oacore/configs#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/oacore/configs.git",
+    "directory": "@oacore/configs"
+  }
+}
