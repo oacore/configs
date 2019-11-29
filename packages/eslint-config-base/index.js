@@ -24,7 +24,13 @@ module.exports = {
     'no-param-reassign': ['error', { props: false }],
     'new-parens': 'off',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', ['parent', 'sibling'], 'index'],
+        'newlines-between': 'always',
+      },
+    ],
     'prettier/prettier': 'error',
   },
 
