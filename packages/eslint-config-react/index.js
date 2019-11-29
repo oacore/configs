@@ -9,5 +9,6 @@ module.exports = {
         ignore: ['children', 'class', 'className', 'id', 'tag'],
       },
     ],
+    'react/state-in-constructor': ['error', 'never'],
   },
 }
