@@ -35,6 +35,13 @@ module.exports = {
         allow: ['warn', 'error'],
       },
     ],
+    'import/order': [
+      'error',
+      {
+        groups: [['builtin', 'external', 'internal']],
+        'newlines-between': 'always',
+      },
+    ],
   },
   reportUnusedDisableDirectives: true,
 }
