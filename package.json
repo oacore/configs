@@ -12,7 +12,6 @@
     "postinstall": "for name in $( ls -d packages/* ); do echo \"Installing packages for $name\"; pushd \"$name\"; npm install > /dev/null & popd; done; wait",
     "version": "lerna changed && lerna version",
     "publish": "lerna changed && lerna publish from-package",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx .",
-    "format": "eslint --ignore-path .gitignore --ext .js,.jsx --fix ."
+    "lint": "eslint --ignore-path .gitignore ."
   }
 }
