@@ -6,14 +6,10 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "lerna": "^3.18.4",
-    "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "install:eslint-config-base": "pushd packages/eslint-config-base; npm install; popd",
-    "install:eslint-config-react": "pushd packages/eslint-config-react; npm install; popd;",
-    "install:prettier-config": "pushd packages/prettier-config; npm install; popd;",
-    "postinstall": "npm-run-all install:*",
+    "postinstall": "for name in $( ls -d packages/* ); do echo \"Installing packages for $name\"; pushd \"$name\"; npm install > /dev/null & popd; done; wait",
     "version": "lerna changed && lerna version",
     "publish": "lerna changed && lerna publish from-package",
     "lint": "eslint --ignore-path .gitignore --ext .js,.jsx .",
