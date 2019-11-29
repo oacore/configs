@@ -5,7 +5,6 @@
   "author": "CORE Team <dev@core.ac.uk>",
   "homepage": "https://github.com/oacore/configs#readme",
   "license": "MIT",
-  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/oacore/configs.git",
