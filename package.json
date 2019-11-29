@@ -10,9 +10,9 @@
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "install:eslint-config-base": "cd packages/eslint-config-base && npm install",
-    "install:eslint-config-react": "cd packages/eslint-config-react && npm install",
-    "install:prettier-config": "cd packages/prettier-config && npm install",
+    "install:eslint-config-base": "pushd packages/eslint-config-base; npm install; popd",
+    "install:eslint-config-react": "pushd packages/eslint-config-react; npm install; popd;",
+    "install:prettier-config": "pushd packages/prettier-config; npm install; popd;",
     "postinstall": "npm-run-all install:*",
     "version": "lerna changed && lerna version",
     "publish": "lerna changed && lerna publish from-package",
