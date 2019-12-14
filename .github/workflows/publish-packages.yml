@@ -23,7 +23,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@oacore/configs'
       - run: |
-          npm ci
+          npm install
           npm run lint
 
       - name: Bump version ${{ steps.get_version.outputs.VERSION }}
@@ -41,4 +41,3 @@ jobs:
 
       - name: Publish package
         run: npm run publish -- --registry='https://npm.pkg.github.com' --yes
-
