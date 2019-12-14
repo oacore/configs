@@ -2,14 +2,14 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "lerna": "^3.18.4",
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "postinstall": "for name in $( ls -d packages/* ); do echo \"Installing packages for $name\"; npm install --prefix \"./$name\" > /dev/null & done; wait",
+    "postinstall": "lerna exec npm install",
     "version": "lerna changed && lerna version",
     "publish": "lerna changed && lerna publish from-package",
     "lint": "eslint --ignore-path .gitignore ."
