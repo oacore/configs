@@ -9,7 +9,7 @@
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "postinstall": "for name in $( ls -d packages/* ); do echo \"Installing packages for $name\"; npm install --prefix \"./$name\" > /dev/null & done; wait",
+    "postinstall": "lerna exec npm install",
     "version": "lerna changed && lerna version",
     "publish": "lerna changed && lerna publish from-package",
     "lint": "eslint --ignore-path .gitignore ."
