@@ -35,4 +35,21 @@ module.exports = {
   },
 
   plugins: ['prettier'],
+  overrides: [
+    {
+      files: ['*.config.js'],
+      env: {
+        browser: false,
+        node: true,
+      },
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+          },
+        ],
+      },
+    },
+  ],
 }
