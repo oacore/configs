@@ -32,6 +32,7 @@ module.exports = {
       },
     ],
     'prettier/prettier': 'error',
+    'arrow-body-style': ['error', 'as-needed'],
   },
 
   plugins: ['prettier'],
