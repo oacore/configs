@@ -4,8 +4,8 @@ module.exports = {
   reportUnusedDisableDirectives: true,
 
   rules: {
-    curly: ['error', 'multi-or-nest'],
-    eqeqeq: ['error', 'smart'],
+    'curly': ['error', 'multi-or-nest'],
+    'eqeqeq': ['error', 'smart'],
     'function-call-argument-newline': ['error', 'consistent'],
     'max-len': [
       'error',
@@ -27,7 +27,7 @@ module.exports = {
     'import/order': [
       'error',
       {
-        groups: ['builtin', 'external', ['parent', 'sibling'], 'index'],
+        'groups': ['builtin', 'external', ['parent', 'sibling'], 'index'],
         'newlines-between': 'always',
       },
     ],
