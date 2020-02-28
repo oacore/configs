@@ -30,7 +30,7 @@ jobs:
         run: npm run version ${{ steps.get_version.outputs.VERSION }} -- --git-tag-version=false  --force-publish --yes
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v1.7.3
+        uses: peter-evans/create-pull-request@v2.4.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Bump version ${{ steps.get_version.outputs.VERSION }}
