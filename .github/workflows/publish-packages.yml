@@ -15,6 +15,8 @@ jobs:
 
       - name: Git Checkout
         uses: actions/checkout@v2
+        with:
+          ref: master
 
       - name: Lint & Build
         uses: actions/setup-node@v1.4.0
@@ -37,7 +39,6 @@ jobs:
           title: Bump version ${{ steps.get_version.outputs.VERSION }}
           body: Bump package.json version
           branch: bump-version-${{ steps.get_version.outputs.VERSION }}
-          base: master
 
       - name: Publish package
         run: npm run publish -- --registry='https://npm.pkg.github.com' --yes
