@@ -1,6 +1,6 @@
 {
   "name": "@oacore/eslint-config-base",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ESLint plugin for non React projects",
   "author": "CORE Team <dev@core.ac.uk>",
   "license": "MIT",
