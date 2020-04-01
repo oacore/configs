@@ -1,6 +1,6 @@
 {
   "name": "@oacore/prettier-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Global prettier configuration across our projects",
   "author": "CORE Team <dev@core.ac.uk>",
   "homepage": "https://github.com/oacore/configs#readme",
