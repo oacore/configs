@@ -1,0 +1,22 @@
+{
+  "name": "@oacore/stylelint-config-base",
+  "version": "1.0.5",
+  "description": "Global stylelint configuration across our projects",
+  "author": "CORE Team <dev@core.ac.uk>",
+  "homepage": "https://github.com/oacore/configs#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oacore/configs.git",
+    "directory": "@oacore/configs"
+  },
+  "dependencies": {
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-twbs-bootstrap": "^2.0.3",
+    "stylelint-prettier": "^1.1.2"
+  },
+  "peerDependencies": {
+    "stylelint": ">=13.6.0"
+  }
+}
