@@ -14,5 +14,7 @@ module.exports = {
       { except: ['after-single-line-comment', 'first-nested'] },
     ],
     'string-quotes': 'single',
+    'value-list-comma-newline-after': 'always-multi-line',
+    'value-list-comma-space-after': 'always-single-line',
   },
 }
