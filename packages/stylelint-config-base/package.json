@@ -1,6 +1,6 @@
 {
   "name": "@oacore/stylelint-config-base",
-  "version": "1.5",
+  "version": "1.1.0",
   "description": "CORE style guide and standard for CSS",
   "author": "CORE Team <dev@core.ac.uk>",
   "homepage": "https://github.com/oacore/configs#readme",
