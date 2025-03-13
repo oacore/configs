@@ -1,13 +1,13 @@
 {
   "name": "@oacore/eslint-config-react",
-  "version": "1.0.6",
+  "version": "1.5",
   "description": "ESLint config for React projects",
   "author": "CORE Team <dev@core.ac.uk>",
   "license": "MIT",
   "dependencies": {
     "@oacore/eslint-config-base": "^1.0.6",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.5.0"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.1"
   },
   "repository": {
     "type": "git",

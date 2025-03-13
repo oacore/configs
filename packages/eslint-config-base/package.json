@@ -1,12 +1,12 @@
 {
   "name": "@oacore/eslint-config-base",
-  "version": "1.0.6",
+  "version": "1.5",
   "description": "ESLint plugin for non React projects",
   "author": "CORE Team <dev@core.ac.uk>",
   "license": "MIT",
   "dependencies": {
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.5.0"
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.1.1"
   },
   "peerDependencies": {
     "eslint-plugin-prettier": "^3.1.1"

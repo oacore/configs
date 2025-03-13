@@ -1,6 +1,6 @@
 {
   "name": "@oacore/stylelint-config-base",
-  "version": "1.0.6",
+  "version": "1.5",
   "description": "CORE style guide and standard for CSS",
   "author": "CORE Team <dev@core.ac.uk>",
   "homepage": "https://github.com/oacore/configs#readme",
@@ -11,10 +11,10 @@
     "directory": "@oacore/configs"
   },
   "dependencies": {
-    "stylelint-config-css-modules": "^2.2.0",
-    "stylelint-config-twbs-bootstrap": "^2.0.3"
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-twbs-bootstrap": "^16.0.0"
   },
   "peerDependencies": {
-    "stylelint": ">=13.6.0"
+    "stylelint": ">=16.15.0"
   }
 }
