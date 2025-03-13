@@ -17,12 +17,12 @@ jobs:
         run: echo $VERSION
 
       - name: Git Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: master
 
       - name: Lint & Build
-        uses: actions/setup-node@v1.4.0
+        uses: actions/setup-node@v4
         with:
           node-version: '22.x'
           registry-url: https://npm.pkg.github.com/
@@ -35,7 +35,7 @@ jobs:
         run: npm run version ${{ steps.get_version.outputs.VERSION }} -- --git-tag-version=false  --force-publish --yes
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v2.4.4
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Bump version ${{ steps.get_version.outputs.VERSION }}
