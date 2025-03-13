@@ -4,14 +4,17 @@ on:
   release:
     types: [published]
 
+env:
+  NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  VERSION: ${GITHUB_REF/refs\/tags\//}
+
 jobs:
   publish-gpr:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ::set-env name=NPM_TOKEN::${{secrets.GITHUB_TOKEN}}
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+        run: echo $VERSION
 
       - name: Git Checkout
         uses: actions/checkout@v2
@@ -21,7 +24,7 @@ jobs:
       - name: Lint & Build
         uses: actions/setup-node@v1.4.0
         with:
-          node-version: '12.x'
+          node-version: '22.x'
           registry-url: https://npm.pkg.github.com/
           scope: '@oacore/configs'
       - run: |

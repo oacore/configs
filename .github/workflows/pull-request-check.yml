@@ -2,16 +2,17 @@ name: Pull request check
 
 on: [push]
 
+env:
+  NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo ::set-env name=NPM_TOKEN::${{secrets.GITHUB_TOKEN}}
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1.4.0
         with:
-          node-version: '12.x'
+          node-version: '22.x'
       - name: npm install & test
         run: |
           npm install
